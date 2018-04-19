@@ -1,0 +1,87 @@
+.main-header{
+    background: #e4c255;
+    opacity: 0.8;
+    padding: 10px;
+}
+.weather-check input{
+    margin-right:10px ;
+}
+.temp{
+    position: relative;
+    text-align: center;
+    margin-top: 8%;
+}
+.temp h1{
+    font-size: 25vh;
+
+}
+.main-text span{
+    opacity: 0.6;
+}
+.btn-primary {
+    background:#e4c255;
+    color: #ffffff;
+}
+.hello-block{
+    color: #fff;
+    background: #ffc255;
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 3vh;
+}
+.hello-block h1{
+    font-size: 8vh;
+}
+.data-1, .data-2{
+    margin-top: 30px;
+    padding: 30px;
+    background: #ffc255;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+.data-1 span{
+    font-size: 10vh;
+}
+.data-1 h3{
+    margin-bottom:10vh;
+    opacity: 0.8;}
+.data-2{
+    opacity: 0.8;
+
+}
+.data-2 h1{
+    margin-bottom: 4vh;
+}
+.forecast-weather-title{
+    margin-top: 5vh;
+    margin-bottom: -3vh;
+}
+.city{
+    margin-top: 3vh;
+    background: #ffc255;
+    opacity: 0.8;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+
+}
+.city h1{
+    color: #fff;
+    font-size: 5vh;
+}
+.city a{
+    text-decoration: none;
+    color: #fff;
+    text-underline: none;
+    font-size: 2vh;
+}
+a:hover{
+    opacity: 0.4;
+}
