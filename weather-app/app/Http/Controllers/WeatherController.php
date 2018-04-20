@@ -39,13 +39,20 @@ class WeatherController extends Controller {
         $result_today=$this->askAPI($url_today);
         $result_forecast=$this->askAPI($url_forecast);
 
+        //if city not found
+        if($result_today['cod']==404){
 
+        return view('city_404');
+
+        //city found
+        }else{
 
         $popular_cities = DB::table('popular_cities')
             ->where('city_name', '=', $result_today['name'])
             ->first();
 
         if (is_null($popular_cities)) {
+            $weather->city_name=$result_today['name'];
             $weather->views=1;
             $weather->save();
         } else {
@@ -53,6 +60,7 @@ class WeatherController extends Controller {
         }
 
         return view('welcome',['weather_now'=>$result_today,'weather_forecast'=>$result_forecast]);
+        }
     }
 
 
